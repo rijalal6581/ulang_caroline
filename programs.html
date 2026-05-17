@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PULSE | Elite Fitness Programs</title>
+    <meta name="description" content="Explore our premium gym programs including Weight Training, Cardio, CrossFit, Boxing, Yoga, and Personal Training at IRON PULSE.">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       1. MODERN LOADING SCREEN
+       ========================================================================== -->
+    <div class="loader-wrapper">
+        <div class="loader-ring"></div>
+        <div class="loader-text">IRON PULSE</div>
+    </div>
+
+    <!-- ==========================================================================
+       2. LOGIN / REGISTER MODAL POPUP
+       ========================================================================== -->
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal-title gradient-text">WELCOME BACK</h3>
+            <p class="modal-subtitle">Access your elite member portal</p>
+            
+            <div class="modal-tabs">
+                <div class="modal-tab active" data-target="form-login">LOGIN</div>
+                <div class="modal-tab" data-target="form-register">REGISTER</div>
+            </div>
+
+            <!-- Login Form -->
+            <form id="form-login" class="modal-form active">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-input" placeholder="enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">SIGN IN <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="form-register" class="modal-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-input" placeholder="enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" class="form-input" placeholder="create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">JOIN THE ELITE <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       3. STICKY BLUR NAVBAR
+       ========================================================================== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                IRON<span>PULSE</span><span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li><a href="trainers.html" class="nav-link">Trainers</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary btn-login"><i class="fa-solid fa-user"></i> Member Login</a>
+            </div>
+
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+       4. PAGE HEADER
+       ========================================================================== -->
+    <header class="hero" style="min-height: 50vh; align-items: flex-end; padding-bottom: 80px;">
+        <div class="glow-element glow-top-left"></div>
+        <div class="container">
+            <div class="hero-content" style="max-width: 100%;">
+                <div class="hero-subtitle"><span class="glow-dot"></span> ELITE CURRICULUM</div>
+                <h1 class="hero-title" style="font-size: 5rem; margin-bottom: 16px;">OUR <span>PROGRAMS</span></h1>
+                <p class="hero-desc" style="margin-bottom: 0;">Uncompromising training regimens tailored for peak performance and spectacular results.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       5. ALL PROGRAMS SECTION
+       ========================================================================== -->
+    <section class="programs section-padding" style="padding-top: 80px;">
+        <div class="glow-element glow-mid-right"></div>
+        <div class="glow-element glow-bottom-left"></div>
+        <div class="container">
+            <div class="programs-grid reveal">
+                <!-- Program Card 1: Weight Training -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop" alt="Weight Training">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">WEIGHT TRAINING</h3>
+                            <p class="program-desc">Build pure raw strength, pack on lean muscle mass, and elevate your metabolic rate with our advanced powerlifting and hypertrophy protocols. Perfect for all experience levels.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Program Card 2: Cardio -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=800&auto=format&fit=crop" alt="Cardio & HIIT">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">CARDIO & HIIT</h3>
+                            <p class="program-desc">Torch stubborn fat and maximize your cardiovascular endurance with high-intensity interval training. Designed to push your anaerobic threshold and accelerate fat loss.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Program Card 3: CrossFit -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b071d73a?q=80&w=800&auto=format&fit=crop" alt="CrossFit">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-bolt"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">CROSSFIT</h3>
+                            <p class="program-desc">Master functional movement, agility, and explosive power through rigorous, dynamic group conditioning challenges. Combines gymnastics, weightlifting, and endurance.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Program Card 4: Boxing -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=800&auto=format&fit=crop" alt="Boxing">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-hand-fist"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">BOXING</h3>
+                            <p class="program-desc">Sharpen your reflexes, enhance hand-eye coordination, and develop knockout power. Learn elite striking, footwork, and defensive techniques from professional fighters.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Program Card 5: Yoga -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop" alt="Yoga">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-om"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">YOGA & MOBILITY</h3>
+                            <p class="program-desc">Enhance flexibility, improve joint health, and cultivate profound mental focus. Our restorative and Vinyasa flow sessions provide the perfect active recovery balance.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Program Card 6: Personal Training -->
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" alt="Personal Training">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <div>
+                            <h3 class="program-title">PERSONAL TRAINING</h3>
+                            <p class="program-desc">Receive 1-on-1 bespoke coaching, personalized nutritional mapping, and daily accountability from an elite specialist dedicated entirely to your specific goals.</p>
+                        </div>
+                        <a href="pricing.html" class="program-link">JOIN PROGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. MODERN FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <h3>IRON<span>PULSE</span></h3>
+                    <p class="footer-desc">
+                        Premium modern fitness sanctuary delivering world-class coaching, innovative workout environments, and luxury amenities for the dedicated athlete.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h3>PROGRAMS</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Weight Training</a></li>
+                        <li><a href="programs.html">Cardio & HIIT</a></li>
+                        <li><a href="programs.html">CrossFit</a></li>
+                        <li><a href="programs.html">Boxing</a></li>
+                        <li><a href="programs.html">Yoga</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h3>STAY CONNECTED</h3>
+                    <p class="footer-desc">Subscribe to our newsletter for exclusive fitness tips, nutritional guides, and VIP event invites.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div>&copy; 2026 IRON PULSE. All Rights Reserved. Built with premium UI/UX.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Gym Rules</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

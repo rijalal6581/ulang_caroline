@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PULSE | Contact & Location</title>
+    <meta name="description" content="Get in touch with IRON PULSE. Find our gym location, contact information, operating hours, and send us a direct inquiry.">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       1. MODERN LOADING SCREEN
+       ========================================================================== -->
+    <div class="loader-wrapper">
+        <div class="loader-ring"></div>
+        <div class="loader-text">IRON PULSE</div>
+    </div>
+
+    <!-- ==========================================================================
+       2. LOGIN / REGISTER MODAL POPUP
+       ========================================================================== -->
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal-title gradient-text">WELCOME BACK</h3>
+            <p class="modal-subtitle">Access your elite member portal</p>
+            
+            <div class="modal-tabs">
+                <div class="modal-tab active" data-target="form-login">LOGIN</div>
+                <div class="modal-tab" data-target="form-register">REGISTER</div>
+            </div>
+
+            <!-- Login Form -->
+            <form id="form-login" class="modal-form active">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-input" placeholder="enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">SIGN IN <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="form-register" class="modal-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-input" placeholder="enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" class="form-input" placeholder="create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">JOIN THE ELITE <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       3. STICKY BLUR NAVBAR
+       ========================================================================== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                IRON<span>PULSE</span><span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="trainers.html" class="nav-link">Trainers</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary btn-login"><i class="fa-solid fa-user"></i> Member Login</a>
+            </div>
+
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+       4. CONTACT PAGE CONTENT
+       ========================================================================== -->
+    <main class="contact-page section-padding">
+        <div class="glow-element glow-top-left"></div>
+        <div class="glow-element glow-mid-right"></div>
+        
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info Card -->
+                <div class="contact-info-card reveal">
+                    <div class="section-subtitle" style="margin-bottom: 12px;">GET IN TOUCH</div>
+                    <h1 class="contact-info-title">CONNECT WITH <span class="gradient-text">IRON PULSE</span></h1>
+                    <p class="contact-info-desc">Have questions about our memberships, personal training, or luxury amenities? Reach out to our concierge team directly.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h4>GYM LOCATION</h4>
+                            <p>777 Iron Pulse Avenue, Suite 100<br>Metropolis, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>DIRECT LINE</h4>
+                            <p>+1 (555) 892-IRON (4766)<br>Mon-Sun: 24/7 Member Support</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>EMAIL CONCIERGE</h4>
+                            <p>concierge@ironpulse.fitness<br>careers@ironpulse.fitness</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 48px;">
+                        <h4 style="font-family: var(--font-sub); font-size: 1.1rem; margin-bottom: 16px;">FOLLOW OUR JOURNEY</h4>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-card reveal">
+                    <h3 class="contact-info-title" style="font-size: 2.2rem; margin-bottom: 32px;">SEND US A <span class="gradient-text">MESSAGE</span></h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="form-input" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Inquiry Subject</label>
+                            <input type="text" id="contact-subject" class="form-input" placeholder="Membership / Personal Training / General" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" class="form-textarea" placeholder="Tell us about your fitness goals or questions..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">SUBMIT INQUIRY <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-section reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c64a7569%3A0x6362d2bc50537482!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==========================================================================
+       5. MODERN FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <h3>IRON<span>PULSE</span></h3>
+                    <p class="footer-desc">
+                        Premium modern fitness sanctuary delivering world-class coaching, innovative workout environments, and luxury amenities for the dedicated athlete.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h3>PROGRAMS</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Weight Training</a></li>
+                        <li><a href="programs.html">Cardio & HIIT</a></li>
+                        <li><a href="programs.html">CrossFit</a></li>
+                        <li><a href="programs.html">Boxing</a></li>
+                        <li><a href="programs.html">Yoga</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h3>STAY CONNECTED</h3>
+                    <p class="footer-desc">Subscribe to our newsletter for exclusive fitness tips, nutritional guides, and VIP event invites.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div>&copy; 2026 IRON PULSE. All Rights Reserved. Built with premium UI/UX.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Gym Rules</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

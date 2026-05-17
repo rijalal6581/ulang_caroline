@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PULSE | Elite Trainers & Coaches</title>
+    <meta name="description" content="Meet the elite personal trainers and coaches at IRON PULSE. World-class experts in bodybuilding, CrossFit, boxing, yoga, and athletic conditioning.">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       1. MODERN LOADING SCREEN
+       ========================================================================== -->
+    <div class="loader-wrapper">
+        <div class="loader-ring"></div>
+        <div class="loader-text">IRON PULSE</div>
+    </div>
+
+    <!-- ==========================================================================
+       2. LOGIN / REGISTER MODAL POPUP
+       ========================================================================== -->
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal-title gradient-text">WELCOME BACK</h3>
+            <p class="modal-subtitle">Access your elite member portal</p>
+            
+            <div class="modal-tabs">
+                <div class="modal-tab active" data-target="form-login">LOGIN</div>
+                <div class="modal-tab" data-target="form-register">REGISTER</div>
+            </div>
+
+            <!-- Login Form -->
+            <form id="form-login" class="modal-form active">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-input" placeholder="enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">SIGN IN <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="form-register" class="modal-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-input" placeholder="enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-input" placeholder="enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" class="form-input" placeholder="create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">JOIN THE ELITE <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       3. STICKY BLUR NAVBAR
+       ========================================================================== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                IRON<span>PULSE</span><span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="trainers.html" class="nav-link active">Trainers</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary btn-login"><i class="fa-solid fa-user"></i> Member Login</a>
+            </div>
+
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+       4. PAGE HEADER
+       ========================================================================== -->
+    <header class="hero" style="min-height: 50vh; align-items: flex-end; padding-bottom: 80px;">
+        <div class="glow-element glow-top-left"></div>
+        <div class="container">
+            <div class="hero-content" style="max-width: 100%;">
+                <div class="hero-subtitle"><span class="glow-dot"></span> WORLD CLASS EXPERTS</div>
+                <h1 class="hero-title" style="font-size: 5rem; margin-bottom: 16px;">ELITE <span>TRAINERS</span></h1>
+                <p class="hero-desc" style="margin-bottom: 0;">Learn from industry-leading specialists dedicated to unlocking your ultimate potential.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       5. TRAINERS GRID SECTION
+       ========================================================================== -->
+    <section class="trainers section-padding" style="padding-top: 80px;">
+        <div class="glow-element glow-mid-right"></div>
+        <div class="glow-element glow-bottom-left"></div>
+        <div class="container">
+            <div class="trainers-grid reveal">
+                <!-- Trainer 1 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=800&auto=format&fit=crop" alt="Marcus Vance">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">MARCUS VANCE</h3>
+                                <div class="trainer-spec">Head Strength & Powerlifting</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1574843455246-88fe9a12c405?q=80&w=800&auto=format&fit=crop" alt="Elena Rostova">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">ELENA ROSTOVA</h3>
+                                <div class="trainer-spec">Elite CrossFit & HIIT Coach</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Darius King">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">DARIUS KING</h3>
+                                <div class="trainer-spec">Master Boxing & Martial Arts</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 4 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Sophia Lin">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">SOPHIA LIN</h3>
+                                <div class="trainer-spec">Master Yoga & Mobility Specialist</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 5 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop" alt="Jaxson Pierce">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">JAXSON PIERCE</h3>
+                                <div class="trainer-spec">Pro Bodybuilding & Nutrition</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 6 -->
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Maya Brooks">
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">MAYA BROOKS</h3>
+                                <div class="trainer-spec">Endurance & Agility Coach</div>
+                                <div class="trainer-social">
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. MODERN FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <h3>IRON<span>PULSE</span></h3>
+                    <p class="footer-desc">
+                        Premium modern fitness sanctuary delivering world-class coaching, innovative workout environments, and luxury amenities for the dedicated athlete.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h3>PROGRAMS</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Weight Training</a></li>
+                        <li><a href="programs.html">Cardio & HIIT</a></li>
+                        <li><a href="programs.html">CrossFit</a></li>
+                        <li><a href="programs.html">Boxing</a></li>
+                        <li><a href="programs.html">Yoga</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h3>STAY CONNECTED</h3>
+                    <p class="footer-desc">Subscribe to our newsletter for exclusive fitness tips, nutritional guides, and VIP event invites.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div>&copy; 2026 IRON PULSE. All Rights Reserved. Built with premium UI/UX.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Gym Rules</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
